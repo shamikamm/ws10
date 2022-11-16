@@ -1,5 +1,1000 @@
-    2  cd /mnt/scratch/shamika
-    3  git init
-    4  git remote rm origin
-    5  script ws9.txt
-    6  history > cmds.log
+   28  cat users_id.txt
+   29  rm users_id.txt
+   30  for i in cat retweeted.txt; do grep -E "^$1" downloaded_tweets_extend_original_nolf2.tsv |awk '{print $2}'; done > users.txt
+   31  cat user.txt
+   32  cat users.txt
+   33  sort users.txt |uniq -c |sort -n |tail
+   34  awk -F "\t" '{print $5, $2}' > incluence_users.txt
+   35  awk -F "\t" '{print $5, $2}' retweeted.txt > r.txt
+   36  cat r.txt
+   37  ls
+   38  head downloaded_tweets_extend_nolf2.tsv
+   39  grep retweeted downloaded_tweets_extend_nolf2.tsv re.txt
+   40  clear
+   41  ls
+   42  exit
+   43  history
+   44  git init
+   45  git branch
+   46  tmux new session -s hw
+   47  1;2c
+   48  tmux new session -s homework
+   49  script a4.txt
+   50  ls
+   51  rm a4.txt
+   52  ls
+   53  cd a4/
+   54  ls
+   55  hrad r.txt
+   56  head r.txt
+   57  rm r.txt
+   58  ls
+   59  grep retweeted downloaded_tweets_extend__nolf2.tsv
+   60  head downloaded_tweets_extend_nolf2.tsv
+   61  grep retweeted downloaded_tweets_extend_nolf2.tsv > ret.txt
+   62  head ret.txt
+   63  awk -F “\t” ‘{print $5, $2}’ |sort -n > dierctional_graph.txt
+   64  awk -F "\t" '{print $5, $2}' ret.txt |sort -n > directional_graph.txt
+   65  ls
+   66  head directional_graph.txt 
+   67  tail directional_graph.txt 
+   68  awk -F “\t” ‘{print $1}’ directional_graph.txt |uniq -c |sort k1n > reply_cluster.txt
+   69  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort k1n > reply_cluster.txt
+   70  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort -k 1 -n > reply_cluster.txt
+   71  cd
+   72  ls
+   73  rm -rf cmds.log
+   74  rm ws4
+   75  rm -rf ws4
+   76  rm -rf ws3
+   77  ls
+   78  rm -rf A1
+   79  rm -rf a2
+   80  ls
+   81  cd a4/
+   82  ls
+   83  head incluence_users.txt
+   84  rm incluence_users.txt 
+   85  ld
+   86  l
+   87  sls
+   88  ls
+   89  head users.txt
+   90  awk -F "\t" '{print $1}' directional_graph.txt |uniq -c |sort -k 1 -n > reply_cluster.txt
+   91  ls
+   92  head reply_cluster.txt
+   93  awk '{if ($1>=$3){print}}' reply_cluster.txt > cluster_threshold.txt
+   94  ls
+   95  head cluster_threshold.txt 
+   96  cat cluster_threshold.txt 
+   97  rm cluster_threshold.txt 
+   98  ls
+   99  for i in reply_cluster.txt; do awk '{if($i>=3){print}}'; done > threshold_replies.txt
+  100  ls
+  101  ls
+  102  cd a4/
+  103  ls
+  104  cat threshold_replies.txt 
+  105  rm threshold_replies.txt 
+  106  ls
+  107  sed 's/ type=retweeted.//g' threshold_replies.txt |sed 's/^.* id=//g' > new_tr.txt
+  108  cat threshold_replies.txt
+  109  sed 's/ type=retweeted.//g' reply_cluster.txt |sed 's/^.* id=//g' > new_rc.txt
+  110  head new_rc.txt
+  111  head rephead reply_cluster.txt 
+  112  cut -f 1 -d ' ' new_rec.txt
+  113  cut -f 1 -d ' ' new_rc.txt
+  114  clear
+  115  ls
+  116  cut -f 2 -d ' ' new_rc.txt > new_rc_2.txt 
+  117  ls
+  118  rm new_tr.txt
+  119  ls
+  120  tail new_rc_2.txt
+  121  head new_rc_2.txt
+  122  awk '{if($1>=$3){print}}' new_rc_2.txt > threshold.txt
+  123  cat threshold.txt
+  124  ls
+  125  cd
+  126  ls
+  127  cd a4
+  128  ls
+  129  head new_rc.txt
+  130  awk -F "\t" '{if($1>=3){print}}' new_rc.txt > l.txt
+  131  head l.txt
+  132  sort -k 1 l.txt |sort -n > m.txt
+  133  head m.txt
+  134  wc -l l.txt
+  135  cat l.txt
+  136  wc -l m.txt
+  137  wc -l new_rc.txt
+  138  awk -F "\t" '{if($1>=3){print}}' new_rc.txt
+  139  cat m.txt
+  140  rm m.txt
+  141  ls
+  142  rm l.txt
+  143  ls
+  144  head new_rc_2.txt
+  145  awk -F "\t" '{if($1>=3){print}}' new_rc_2.txt > p.txt
+  146  wc -l p.txt
+  147  head directional_graph.txt
+  148  awk -F "\t" '{if($1>=3){print}}' directional_graph.txt > b.txt
+  149  wc -l directional_graph.txt 
+  150  head b.txt
+  151  wc -l b.txt
+  152  cd a4/
+  153  cd a4/
+  154  ls
+  155  head b.txt
+  156  cat b.txt
+  157  grep 400190499585544192 b.txt
+  158  grep 1520474822697914368
+  159  grep 1520474822697914368 b.txt
+  160  grep 1520389150561734658 b.txt
+  161  grep 1520139548679933955 b.txt
+  162  grep 1520139548679933955 retweeted.txt
+  163  grep 1261203450022359043 b.txt
+  164  ls
+  165  rm b.txt
+  166  head new_rc_2.txt
+  167  rm new_rc_2.txt
+  168  rm new_rc.txt
+  169  rm p.txt
+  170  ls
+  171  cat directional_graph.txt
+  172  rm directional_graph.txt
+  173  ls
+  174  rm directional_graph.txt
+  175  rm dierctional_graph.txt
+  176  ls
+  177  rm reply_cluster.txt
+  178  ls
+  179  rm threshold.txt
+  180  ls
+  181  head ret.txt
+  182  awk -F "\t" '{print $2, $5}' ret.txt > directional_graph.txt
+  183  ls
+  184  head directional_graph.txt
+  185  sort directional_graph.txt |uniq -c |sort -k 1 -n > reply_cluster.txt
+  186  head reply_cluster.txt 
+  187  awk '{if(($1>=3){print}}' reply_cluster.txt > threshold.txt
+  188  awk '{if($1>=3){print}}' reply_cluster.txt > threshold.txt
+  189  cat threshold.txt 
+  190  tail threshold.txt 
+  191  cat threshold.txt 
+  192  sort -n threshold.txt 
+  193  ls
+  194  sort directional_graph.txt |uniq -c |sort -n |tail
+  195   sort directional_graph.txt |uniq -c |sort -n |head
+  196  cut -f 1 -d ' ' directional_graph.txt > a.txt
+  197  head a.txt
+  198  awk '{if($1>=3){print}}' a.txt > t.txt
+  199  cat t.txt
+  200  cd /mnt/scratch/shamika
+  201  ls
+  202  pwd
+  203  ls
+  204  cd /mnt/scratch/shamika
+  205  ls
+  206  cd ws8/
+  207  ls
+  208  grep "Y\t" file.txt > verified.txt
+  209  ls
+  210  head verified.txt 
+  211  head amazon_reviews_us_Books_v1_02.tsv 
+  212  quit
+  213  exit
+  214  pwd
+  215  ls
+  216  r ws8
+  217  mkdir ws8
+  218  ls
+  219  /mnt/scratch/shamika
+  220  cd /mnt/scratch/shamika: Is a directory
+  221  cp amazon_reviews_us_Books_v1_02.tsv /mnt/scratch/shamika
+  222  ls
+  223  cd /mnt/scratch/shamika
+  224  ls
+  225  cd ws7
+  226  ls
+  227  rmdir ws7
+  228  rm -rf ws7
+  229  ls
+  230  cd
+  231  ls
+  232  cd /mnt/scratch/shamika
+  233  ls
+  234  rm -rf ws7
+  235  ls
+  236  mkdir ws8
+  237  ls
+  238  cp amazon_reviews_us_Books_v1_02.tsv ws8
+  239  cd ws8/
+  240  ls
+  241  cd /mnt/scratch/shamika
+  242  ls
+  243  cd ws8/
+  244  ls
+  245  head amazon_reviews_us_Books_v1_02.tsv 
+  246  cd /mnt/scratch/shamika/
+  247  ls
+  248  cd ws8/
+  249  ls
+  250  pwd
+  251  awk -F "\t" '{print $12, $14}' amazon_reviews_us_Books_v1_02.tsv > file.txt
+  252  cut -f 12, 14 -d ' ' amazon_reviews_us_Books_v1_02.tsv > file.txt
+  253  awk -F "\t" '{print $12, $14}' amazon_reviews_us_Books_v1_02.tsv > file.txt
+  254  ls
+  255  head file.txt
+  256  grep "Y" file.txt > verified.txt
+  257  ls
+  258  head verified.txt
+  259  wc verified.txt
+  260  wc file.txt
+  261  cd /mnt/scratch/shamika
+  262  ls
+  263  cd ws8
+  264  ls
+  265  pwd
+  266  tail verified.txt
+  267  rm -f verified.txt 
+  268  ls
+  269  ls
+  270  cd /mnt/scratch/shamika
+  271  cd ws8/
+  272  pwd
+  273  ls
+  274  grep -P "\tY\t" file.txt > verified.txt
+  275  ls
+  276  head verified.txt 
+  277  cat verified.txt 
+  278  rm verified.txt 
+  279  ls
+  280  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv > f.txt
+  281  ls
+  282  head f.txt
+  283  head amazon_reviews_us_Books_v1_02.tsv 
+  284  ls
+  285  /mnt/scratch/shamika
+  286  ls
+  287  cd /mnt/scratch/shamika
+  288  ls
+  289  cd ws8/
+  290  pwd
+  291  ls
+  292  head f.txt
+  293  rm -f f.txt
+  294  ls
+  295  rm -f verified.txt 
+  296  ls
+  297  grep "Y" amazon_reviews_us_Books_v1_02.tsv |awk -F "\t" '{print $12, $14}' > file_1.txt
+  298  grep -P "\tY\tY\t" amazon_reviews_us_Books_v1_02.tsv > a.txt
+  299  ls
+  300  head a.txt
+  301  awk -F "\t" '{print $12,$14}' a.txt > verified.txt
+  302  ls
+  303  head verified.txt 
+  304  tail verified.txt 
+  305  wc verified.txt 
+  306  cat verified.txt 
+  307  grep "\tY\t" amazon_reviews_us_Books_v1_02.tsv > v.txt
+  308  ls
+  309  head v.txt
+  310  cat v.txt
+  311  rm v.txt
+  312  ls
+  313  grep "tN\tY\t" amazon_reviews_us_Books_v1_02.tsv |awk -F "\t" '{print $12,$14} > file_2.txt
+  314  grep "tN\tY\t" amazon_reviews_us_Books_v1_02.tsv |awk -F "\t" '{print $12,$14}' > file_2.txt
+  315  ls
+  316  head file_2.txt
+  317  grep "tN\tY\t" amazon_reviews_us_Books_v1_02.tsv >b.txt
+  318  head b.txt
+  319  grep "\tY\tN\t" amazon_reviews_us_Books_v1_02.tsv >c.txt
+  320  head c.txt
+  321  grep exit
+  322  cd /mnt/scratch/shamika
+  323  ls
+  324  cd ws8/
+  325  ls
+  326  head a.txt
+  327  rm a.txt
+  328  rm b.txt
+  329  rm c.txt
+  330  head verified.txt
+  331  caat verified.txt 
+  332  cst verified.txt 
+  333  cat verified.txt 
+  334  wc -l verified.txt 
+  335  rm verified.txt 
+  336  ls
+  337  head file_1.txt 
+  338  rm file_1.txt 
+  339  rm file_2.txt 
+  340  rm file.txt 
+  341  ls
+  342  clear
+  343  ls
+  344  head amazon_reviews_us_Books_v1_02.tsv 
+  345  cut -f 12 -d ' ' amazon_reviews_us_Books_v1_02.tsv > file.txt
+  346  ls
+  347  head file.txt 
+  348  wc fiel
+  349  wc file.txt 
+  350  tail file.txt 
+  351  rm file.txt 
+  352  cut -f 11 -d ' ' amazon_reviews_us_Books_v1_02.tsv > f.txt
+  353  head f.txt
+  354  rm f.txt
+  355  cut -f 13 -d ' ' amazon_reviews_us_Books_v1_02.tsv |head
+  356  tail amazon_reviews_us_Books_v1_02.tsv 
+  357  cut -f 12 -d ' ' amazon_reviews_us_Books_v1_02.tsv |tail
+  358  cut -f 10 -d ' ' amazon_reviews_us_Books_v1_02.tsv |head
+  359  cut -f 12 amazon_reviews_us_Books_v1_02.tsv |head
+  360  cut -f 12 amazon_reviews_us_Books_v1_02.tsv > file.txt
+  361  wc -l file.txt 
+  362  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  363  head file.txt 
+  364  tail file.txt 
+  365  rm file.txt
+  366  ls
+  367  cut -f 12,14 amazon_reviews_us_Books_v1_02.tsv > file.txt
+  368  ls
+  369  head file.txt 
+  370  grep Y file.txt > verified.txt
+  371  ls
+  372  head verified.txt 
+  373  rm verified.txt 
+  374  grep "Y\t" file.txt > verified.txt
+  375  ls
+  376  head verified.txt 
+  377  rm verified.txt 
+  378  ls
+  379  cd /mnt/scratch/shamika
+  380  ls
+  381  cd ws8/
+  382  ls
+  383  head file.txt
+  384  cut -1 file.txt |head
+  385  cut -f 1 file.txt |head
+  386  for i in file.txt; do awk '{if ($1=Y) {print}}'; done > verified.txt
+  387  awk '{if ($1=Y) {print}}' file.txt > verified.txt
+  388  ls
+  389  head verified.txt 
+  390   awk '{if ($1=Y) {print}}' file.txt
+  391  awk '{if ($1='Y'){print}}' file.txt
+  392  cd /mnt/scratch/shamika
+  393  ls
+  394  cd ws8/
+  395  ls
+  396  head verified.txt 
+  397  rm verified.txt 
+  398  ls
+  399  head file.txt
+  400  grep "N" file.txt > unverified.txt
+  401  ls
+  402  head unverified.txt 
+  403  wc unverified.txt 
+  404   grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv |awk -F "\t" '{print $14}' > verified.txt
+  405  ls
+  406  rm unverified.txt 
+  407  ls
+  408  head verified.txt 
+  409  rm verified.txt 
+  410  ls
+  411   grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv |awk -F "\t" '{print $12,$14}' > verified.txt
+  412  ls
+  413  head verified.txt 
+  414  ls
+  415  wc verified.txt 
+  416  awk -F "\t" '{print $12,$14}' amazon_reviews_us_Books_v1_02.tsv > col.txt
+  417  cut -f 12,14 amazon_reviews_us_Books_v1_02.tsv > col.txt
+  418  ls
+  419  rm verified.txt 
+  420  ls
+  421  head col.txt 
+  422  cat col.txt 
+  423  cd /mnt/scratch/shamika
+  424  ls
+  425  sed -n 'books/p' amazon_reviews_us_Books_v1_02.tsv 
+  426  sed -n 'books/ p' amazon_reviews_us_Books_v1_02.tsv 
+  427  exit
+  428  cd /mnt/scratch/shamika
+  429  chmod 700
+  430  chmod --help
+  431  chmod 700 /mnt/scratch/shamika
+  432  ks
+  433  ls
+  434  exit
+  435  cd /mnt/scratch/shamika
+  436  ls
+  437  cd ws8/
+  438  ls
+  439  head file.txt 
+  440  if $1=Y; print >verified.txt
+  441  cd /mnt/scratch/shamika
+  442  cd ws8/
+  443  pwd
+  444  ls
+  445  head col.txt 
+  446  wc -l file.txt 
+  447  wc -l col.txt 
+  448  rm col.txt 
+  449  ls
+  450  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv > yes.txt
+  451  ls
+  452  head yes.txt 
+  453  cut -f 12 yes.txt > p.txt
+  454  head yes.txt 
+  455  tail yes.txt 
+  456  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > yes.txt
+  457  ls
+  458  head yes.txt 
+  459  tail yes.txt 
+  460  awk -F "\t" '{print $12, $14}' > verified .txt
+  461  awk -F "\t" '{print $12, $14}' yes.txt > verified.txt
+  462  rm -f p.txt
+  463  ls
+  464  rm verified
+  465  ls
+  466  head verified.txt 
+  467  cd /mnt/scratch/shamika
+  468  ls
+  469  cd ws8/
+  470  ls
+  471  head verified.txt 
+  472  cut -f 1 verified.txt |head 
+  473  cut -f 1 -d ' ' verified.txt |head
+  474  cut -f 1 -d ' ' verified.txt |tail
+  475  wc -l verified.txt 
+  476  ls
+  477  rm file.txt
+  478  ls
+  479  gerp -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv > no.txt
+  480  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv > no.txt
+  481  grep -P '\tY\tN\t' amazon_reviews_us_Books_v1_02.tsv > no.txt
+  482  ls 
+  483  head no.txt 
+  484  awk -F "\t" '{print $12, $14}' no.txt > unverified.txt
+  485  ls
+  486  head unverified.txt 
+  487  cut -f 1 -d ' ' unverified.txt 
+  488  wc -l unverified.txt 
+  489  wc -l no.txt 
+  490  rm no.txt 
+  491  rm unverified.txt 
+  492  ls
+  493  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  494  wc -l verified.txt 
+  495  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc
+  496  grep -P '\tY\tN\t' amazon_reviews_us_Books_v1_02.tsv | wc
+  497  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv >no.txt
+  498  ls
+  499  head no.txt 
+  500  awk -F "\t" '{print $12, $14}' no.txt > unverified.txt
+  501  ls
+  502  cut -f 1 -d ' ' unverified.txt |head
+  503  wc -l unverified.txt 
+  504  wc -l verified.txt 
+  505  wc -l amazon_reviews_us_Books_v1_02.tsv 
+  506  fgrep -v -w -f /usr/share/groff/current/eign verified.txt 
+  507  ls
+  508  rm no.txt 
+  509  rm yes.txt 
+  510  ls
+  511  sed -E 's/(is |and |if |it |the |or |is |as |a |to |that |there |this)/\t/g' verified.txt > ver.txt
+  512  head ver.txt
+  513  sed -E 's/(is |and |if |it |the |or |is |as |a |to |that |there |this)/\t/g' unverified.txt > unver.txt
+  514  head unver.txt
+  515  sort ver.txt | uniq -c |sort -k1,1nr -k2b > com_vertxt
+  516  head com_vertxt 
+  517  rm com_vertxt 
+  518  ls
+  519  tr -c '[:alnum:]' '[\n*]' < ver.txt | fgrep -v -w -f /usr/share/groff/current/eign | sort | uniq -c | sort -nr | head  -10
+  520   tr -c '[:alnum:]' '[\n*]' < ver.txt |sort | uniq -c | sort -nr | head  -10
+  521  quit
+  522  exit
+  523  /mnt/scratch/shamika
+  524  cd /mnt/scratch/shamika
+  525  ls
+  526  rm -rf ws8
+  527  ls
+  528  xit
+  529  exit
+  530  git init
+  531  mkdir ws8
+  532  cp amazon_reviews_us_Books_v1_02.tsv ws8
+  533  cd ws8/
+  534  ls
+  535  pwd
+  536  grep -P "\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
+  537   grep -P "\tN\tY\t" amazon_reviews_us_Books_v1_02.tsv > y.txt
+  538  /mnt/scratch/shamika
+  539  script ws8.txt
+  540  exit
+  541  history
+  542  script WS8.txt
+  543  git init
+  544  mkdir ws8
+  545  ls
+  546  cp amazon_reviews_us_Books_v1_02.tsv ws8
+  547  cd ws8/
+  548  ls
+  549  pwd
+  550  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
+  551  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
+  552  ls 
+  553  head y.txt 
+  554  awk -F "\t" '{print $12,$14}' y.txt > verified.txt
+  555  ls
+  556  head verified.txt 
+  557  wc -l verified.txt 
+  558  rm verified.txt 
+  559  grep -P '\tY\tY\t' amazon_reviews_us_Books_v1_02.tsv |wc
+  560  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv |wc
+  561  rm y.txt 
+  562  grep -P '\tN\tY\t' amazon_reviews_us_Books_v1_02.tsv > y.txt
+  563  awk -F "\t" '{print $12,$14}' y.txt > verified.txt
+  564  grep -P '\tN\tN\t' amazon_reviews_us_Books_v1_02.tsv > n.txt
+  565  wc n.txt
+  566  awk -F "\t" '{print $12,$14}' n.txt > unverified.txt
+  567  ls
+  568  head n.txt
+  569  sed -E 's/(and |is |I |for |or |of |to |in |at |it |it's |but |so |the |that)/,/g' verified.txt > ver.txt
+  570  sed -E 's/(and |is |I |for |or |of |to |in |at |it |but |so |the |that)/,/g' verified.txt > ver.txt
+  571  sed -E 's/(and |is |I |for |or |of |to |in |at |it |but |so |the |that)/,/g' unverified.txt > unver.txt
+  572  ls
+  573  tr -c '[:alnum:]' '[\n*]' < ver.txt |sort | uniq -c | sort -nr | head  -10
+  574  tr -c '[:alnum:]' '[\n*]' < unver.txt |sort | uniq -c | sort -nr | head  -10
+  575  wc unver.txt
+  576  tr -c '[:alnum:]' '[\n*]' < unver.txt |sort | uniq -c | sort -n |tail -10
+  577  cd /mnt/scratch/shamika
+  578  script Ws8.txt
+  579  history > cmds.log
+  580  ls
+  581  git add Ws8.txt
+  582  git add cmds.log
+  583  git commit -m "first commit"
+  584  git branch -M main
+  585  git remote add origin https://github.com/shamikamm/ws8.git
+  586  git push -u origin main
+  587  exit
+  588  history
+  589  mkdir a3
+  590  ls
+  591  cp downloaded_tweets_extend_nolf2.tsv a3
+  592  cp downloaded_tweets_extend_original_nolf2.tsv a3
+  593  cd a3/
+  594  ls
+  595  head downloaded_tweets_extend_nolf2.tsv 
+  596  grep "replied_to" downloaded_tweets_extend_nolf2.tsv > replied_to.txt
+  597  awk -F "\t" {print $6,$2}' replied_to.txt |sort -n > directional_graph.txt
+  598  awk -F "\t" '{print $6,$2}' replied_to.txt |sort -n > directional_graph.txt
+  599  ls
+  600  head directional_graph.txt 
+  601  awk -F "\t" '{print $1}' directional_graph.txt |sort |uniq -c |sort -k1 -n > reply_cluster.txt
+  602  awk '{if ($1>=3) {print}}' > p2.txt
+  603  awk '{if ($1>=3) {print}}' reply_cluster.txt > p2.txt
+  604  ls
+  605  head p2.txt
+  606  git init
+  607  tail p2.txt
+  608  wc p2.txt
+  609  /etc/gnuplot-5.4.4/src/gnuplot
+  610  ls
+  611  head replied_to.txt 
+  612  awk -F "\t" '{print $4}' replies_to.txt |sort |uniq -c | sort -n |tail -30 > hashtags .txt
+  613  awk -F "\t" '{print $4}' replied_to.txt |sort |uniq -c | sort -n |tail -30 > hashtags.txt
+  614  ls
+  615  cat hashtags.txt
+  616  cd /mnt/scratch/shamika
+  617  ls
+  618  cd a3/
+  619  ls
+  620  display graph.txt 
+  621  exit
+  622  cd /mnt/scratch/shamika
+  623  cd a3
+  624  ls
+  625  display graph.txt
+  626  exit
+  627  cd /mnt/scratch/shamika
+  628  cd a3
+  629  ls
+  630  display graph.txt
+  631  export DISPLAY=:0.0
+  632  display graph.txt 
+  633  EXIT
+  634  exit
+  635  cd /mnt/scratch/shamika
+  636  script A3.txt
+  637  cd
+  638  ls
+  639  cp downloaded_tweets_extend_nolf2.tsv /mnt/scratch/shamika
+  640  cp downloaded_tweets_extend_original_nolf2.tsv /mnt/scratch/shamika
+  641  cd /mnt/scratch/shamika
+  642  script a4.txt
+  643  script A3.txt
+  644  vi A3txt
+  645  less A3.txt
+  646  git add A3.txt
+  647  ls
+  648  cd a3/
+  649  ls
+  650  cp directional_graph.txt /mnt/scratch/shamika
+  651  cp p2.txt /mnt/scratch/shamika
+  652  cd /mnt/scratch/shamika
+  653  ls
+  654  git add p2.txt
+  655  git add directional_graph.txt 
+  656  git status
+  657  history
+  658  git commit -m "first commit"
+  659  git branch -M main
+  660  git remote add origin https://github.com/shamikamm/A3.git
+  661  git push -u origin main
+  662  git status
+  663  git add A3.txt
+  664  ls
+  665  git add directional_graph.txt 
+  666  git add p2.txt 
+  667  git branch -M main
+  668  git remote add origin https://github.com/shamikamm/A3.git
+  669  git remote rm origin
+  670  git remote add origin https://github.com/shamikamm/A3.git
+  671  git push
+  672  git push -u origin main
+  673  cd /mnt/scratch/shamika
+  674  ls
+  675  rm a4.txt
+  676  rm p2.txt
+  677  rm directional_graph.txt 
+  678  ls
+  679  rm A3txt
+  680  ls
+  681  mkdir a4
+  682  cp downloaded_tweets_extend_nolf2.tsv a4
+  683  cp downloaded_tweets_extend_original_nolf2.tsv a4
+  684  cd a4/
+  685  ls
+  686  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5}' |sed ^.* id=//g |sed 's/ type=retweetd.//g' > retweeted.txt
+  687  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5}' |sed 's/^.* id=//g |sed 's/ type=retweetd.//g' > retweeted.txt
+  688  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5}' |sed 's/^.* id=//g' |sed 's/ type=retweetd.//g' > retweeted.txt
+  689  for i in cat retweeted.txt; do grep -E "^$1" downloaded_tweets_extend_original_nolf2.tsv |awk '{print $2}'; done > users.txt
+  690  ls
+  691  head retweeted.txt 
+  692  head users.txt 
+  693  sort users.txt |uniq -c |sort -n |tail
+  694  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5,$2}' |sort -n > directional_graph.txt
+  695  awk -F "\t" '{print $1}' directional_graph.txt |sort |uniq -c |sort -k1 -n > reply_cluster.txt
+  696  awk '{if ($1 >= 3} {print}}' reply_cluster.txt >p2.txt
+  697   awk '{if ($1 >= 3){print}}' reply_cluster.txt >p2.txt
+  698  ls
+  699  head p2.txt
+  700  /etc/gnuplot-5.4.4/src/gnuplot
+  701  la
+  702  ls
+  703  head retweeted.txt 
+  704  head histogram.txt 
+  705  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv | awk -F "\t" '{print $4}' |sort |uniq -c |sort -n |tail -30
+  706  cd /mnt/scratch/shamika
+  707  ./bin/gephi
+  708  exit
+  709  cd /mnt/scratch/shamika
+  710  ls
+  711  cd a4
+  712  ls
+  713  head p2.txt
+  714  tail p2.txt
+  715  exit
+  716  cd /mnt/scratch/shamika
+  717  ls
+  718  cd /mnt/scratch/shamika
+  719  cd a4/
+  720  pwd
+  721  ls
+  722  cd /mnt/scratch/shamika
+  723  cd a4
+  724  pwd
+  725  ls
+  726  tail p2_2.txt
+  727  tail p2.txt
+  728  head retweeted.txt
+  729  grep 1353544852076695559 retweeted.txt 
+  730  grep 1353544852076695559  reply_cluster.txt
+  731  grep 1353544852076695559  downloaded_tweets_extend_nolf2.tsv
+  732  head -n 3 downloaded_tweets_extend_nolf2.tsv
+  733  grep 151365449450413670 downloaded_tweets_extend_nolf2.tsv
+  734  grep 1513654494504136709 downloaded_tweets_extend_nolf2.tsv 
+  735  tail -n 4 downloaded_tweets_extend_nolf2.tsv 
+  736  grep 1480902834375647232 downloaded_tweets_extend_nolf2.tsv 
+  737  gerp 1081867978801639425 downloaded_tweets_extend_nolf2.tsv 
+  738  grep 1081867978801639425 downloaded_tweets_extend_nolf2.tsv 
+  739  tail reply_cluster.txt 
+  740  cat p2.txt 
+  741  grep 1496610237020704772 downloaded_tweets_extend_nolf2.tsv 
+  742  cd /mnt/scratch/shamika/a3
+  743  ls
+  744  tail p2.txt 
+  745  grep 308045021 downloaded_tweets_extend_original_nolf2.tsv 
+  746  grep 308045021 downloaded_tweets_extend_nolf2.tsv 
+  747  grep 19739126 downloaded_tweets_extend_original_nolf2.tsv 
+  748  grep 19739126 downloaded_tweets_extend_original_nolf2.tsv |cut -2,6 > gephi.txt
+  749  grep 19739126 downloaded_tweets_extend_original_nolf2.tsv |cut -f 2,6 > gephi.txt
+  750  ls
+  751  cat gephi.txt 
+  752  rm gephi.txt 
+  753  ls
+  754  grep 19739126 downloaded_tweets_extend_nolf2.tsv |cut -f 2,6 > gephi.txt 
+  755  cat gephi.txt 
+  756  /mnt/scratch/shamika/a4
+  757  cd /mnt/scratch/shamika/a4
+  758  ls
+  759  head users.txt 
+  760  wc users.txt 
+  761  cd /mnt/scratch/shamika
+  762  rm -rf a4
+  763  ls
+  764  rm cmds.log
+  765  ls
+  766  mkdir a4
+  767  cp downloaded_tweets_extend_nolf2.tsv a4
+  768  cp downloaded_tweets_extend_original_nolf2.tsv a4
+  769  git init
+  770  cd a4/
+  771  ls
+  772  pwd
+  773  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5}' |sed 's/^.* id=//g' |sed 's/ type=retweetd.//g' > retweeted.txt
+  774  ls
+  775  head retweeted.txt 
+  776  for i in cat retweeted.txt; do grep -E "^$1" downloaded_tweets_extend_original_nolf2.tsv |awk '{print $2}'; done > users.txt
+  777  ls
+  778  head users.txt
+  779  sort users.txt |uniq -c |sort -n |tail
+  780  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv |awk -F "\t" '{print $5,$2}' |sort -n > directional_graph.txt
+  781  ls
+  782  awk -F "\t" '{print $1}' directional_graph.txt |sort |uniq -c |sort -k1 -n > reply_cluster.txt
+  783  awk '{if ($1 >= 3){print}}' reply_cluster.txt > p2.txt
+  784  head p2.txt
+  785  ls
+  786  ls -latr
+  787  /etc/gnuplot-5.4.4/src/gnuplot
+  788  ls
+  789  grep 'retweeted' downloaded_tweets_extend_nolf2.tsv | awk -F "\t" '{print $4}' |sort |uniq -c |sort -n |tail -30
+  790  cd /mnt/scratch/shamika/a4
+  791  ls
+  792  display file.svg
+  793  exit
+  794  cd /mnt/scratch/shamika
+  795  ls
+  796  script assignment_4.txt
+  797  history > cmds.log
+  798  ls
+  799  vi assignment_4.txt
+  800  cd /mnt/scratch/shamika/a3
+  801  tail p2.txt 
+  802  cd /mnt/scratch/shamika/a4
+  803  cd cd /mnt/scratch/shamika
+  804  cd /mnt/scratch/shamika
+  805  ls
+  806  vi assignment_4.txt 
+  807  cd a4
+  808  ls
+  809  cp p2.txt /mnt/scratch/shamika
+  810  git remote rm origin
+  811  cp directional_graph.txt /mnt/scratch/shamika
+  812  cd /mnt/scratch/shamika
+  813  ls
+  814  git remote rm origin
+  815  git status
+  816  git add assignment_4.txt 
+  817  git add directional_graph.txt 
+  818  git git branch -M main
+  819  git branch -M main
+  820  git commit -m "first commit"
+  821  git remote add origin https://github.com/shamikamm/A4.git
+  822  git push -u origin main
+  823  cd /mnt/scratch/shamika/a3
+  824  grep 492736486 downloaded_tweets_extend_nolf2.tsv 
+  825   grep 492736486 downloaded_tweets_extend_nolf2.tsv |cut -f 2,6 > cluster_graph.txt
+  826  cat cluster_graph.txt 
+  827  wc cluster_graph.txt 
+  828  cd /mnt/scratch/shamika/a3
+  829  ls
+  830  display histogram.svg
+  831  cd /mnt/scratch/shamika
+  832  cd a3
+  833  ls
+  834  /etc/gnuplot-5.4.4/src/gnuplot
+  835  head reply_cluster.txt 
+  836  cd /mnt/scratch/shamika
+  837  ls
+  838  rm directional_graph.txt 
+  839  rm p2.txt 
+  840  rm cmds.log 
+  841  ls
+  842  mkdir ws9
+  843  cp downloaded_tweets_extend_original_nolf2.tsv ws9
+  844  cd ws9/
+  845  ls
+  846  pwd
+  847  vi randomsample.sh
+  848  ls
+  849  rm downloaded_tweets_extend_original_nolf2.tsv 
+  850  cd /mnt/scratch/shamika
+  851  ls
+  852  cp amazon_reviews_us_Books_v1_02.tsv ws9
+  853  cd /mnt/scratch/shamika/ws9
+  854  ls
+  855  vi randomsample.sh 
+  856  cd /mnt/scratch/shamika/ws9
+  857  ls
+  858  vi randomsample.sh 
+  859  cd /mnt/scratch/shamika
+  860  cd ws9
+  861  ls
+  862  vi randomsample.sh 
+  863  ./randomsample.sh
+  864  chmod u+x randomsample.sh 
+  865  ./randomsample.sh 
+  866  ./randomsample.sh > output.txt
+  867  ls
+  868  rm output.txt 
+  869  ls
+  870  vi randomsample.sh 
+  871  ./randomsample.sh
+  872  vi randomsample.sh 
+  873  ./randomsample.sh 
+  874  vi randomsample.sh 
+  875  ./randomsample.sh 
+  876  vi randomsample.sh 
+  877  vi example.sh
+  878  wc amazon_reviews_us_Books_v1_02.tsv 
+  879  vi example.sh 
+  880  chmod u+x example.sh 
+  881  ./example.sh 
+  882  ./example.sh > output.txt
+  883  ls
+  884  head output.txt 
+  885  vi example.sh 
+  886  cd /mnt/scratch/shamika
+  887  cd ws9
+  888  ls
+  889  head output.txt 
+  890  rm output.txt 
+  891  ls
+  892  vi example.sh 
+  893  rm example.sh 
+  894  ls
+  895  ls -latr
+  896  vi randomsample.sh 
+  897  histiry
+  898  history
+  899  exit
+  900  mkdir ws9
+  901  cp amazon_reviews_us_Books_v1_02.tsv ws9
+  902  cd ws9/
+  903  ls
+  904  pwd
+  905  vi randomsample.sh
+  906  chmod u+x randomsample.sh
+  907  ./randomsample.sh > output.txt
+  908  vi randomsample.sh 
+  909  wc amazon_reviews_us_Books_v1_02.tsv 
+  910  vi randomsample.sh 
+  911  ./randomsample.sh 
+  912  vi randomsample.sh 
+  913  ./randomsample.sh 
+  914  vi randomsample.sh 
+  915  ./randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  916  vi randomsample.sh 
+  917  ./randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  918  vi randomsample.sh 
+  919  vi randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  920  vi randomsample.sh 
+  921  ./randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  922  vi randomsample.sh 
+  923  ./randomsample.sh 12 amazon_reviews_us_Books_v1_02.tsv 
+  924  cat randomsample.sh 
+  925  cd /mnt/scratch/shamika
+  926  git init
+  927  git remote rm origin
+  928  script ws9.txt
+  929  history > cmds.log
+  930  ls
+  931  vi ws9.txt 
+  932  cd ws9
+  933  vi randomsample.sh 
+  934  cd ..
+  935  vi ws9.txt 
+  936  git add cmds.log
+  937  git add ws9.txt
+  938  git branch -M main
+  939  git commit -m "first commit"
+  940  git remote add origin https://github.com/shamikamm/ws9.git
+  941  git push -u origin main
+  942  exit
+  943  history 
+  944  git init
+  945  cd /mnt/scratch/shamika
+  946  ls -latr
+  947  cp downloaded_tweets_extend_original_nolf2_NOBOT.tsv ~
+  948  cd /mnt/scratch/shamika
+  949  ls
+  950  awk -F "\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  951  ls
+  952  head downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+  953  awk -F "\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nolf2.tsv > downloaded_tweets_extend_nolf2_NOBOT.tsv
+  954  ls
+  955  cd /mnt/scratch/shamika
+  956  ls
+  957  script a5.txt
+  958  mkdir a5
+  959  cp downloaded_tweets_extend_nolf2_NOBOT.tsv a5
+  960  cp downloaded_tweets_extend_original_nolf2_NOBOT.tsv 15
+  961  cp downloaded_tweets_extend_original_nolf2_NOBOT.tsv a5
+  962  cd a5/
+  963  ls
+  964  pwd
+  965  grep 'replied_to' downloaded_tweets_extend_original_nolf2_NOBOT.tsv > downloaded_tweets_extend_original_nolf2_NOBOT_repliedto.tsv
+  966  ls
+  967  head downloaded_tweets_extend_original_nolf2_NOBOT_repliedto.tsv
+  968  grep 'retweeted' downloaded_tweets_extend_original_nolf2_NOBOT.tsv > downloaded_tweets_extend_original_nolf2_NOBOT_retweeted.tsv
+  969  ls 
+  970  cd /mnt/cratch/shamika
+  971  cd mnt/scratch/shamika
+  972  ls
+  973  exit
+  974  ls
+  975  exit
+  976  ls
+  977  exi
+  978  exit
+  979  ls
+  980  cd /mnt/scratch/shamika
+  981  ls
+  982  mkdir ws10
+  983  cp numbers.py ws10 
+  984  cp amazon_reviews_us_Books_v1_02.tsv ws10
+  985  cd ws10
+  986  ls
+  987  pwd
+  988  ls
+  989  python3
+  990  python numbers.py
+  991  ls
+  992  time python3 numbers.py
+  993  vi amazon_reviews_us_Books_v1_02.tsv 
+  994  cd /mnt/scratch/shamiika
+  995  cd /mnt/scratch/shamika
+  996  ls
+  997  ls numbers.py
+  998  cat numbers.py 
+  999  time python3 numbers.py
+ 1000  exit
+ 1001  git init
+ 1002  git remote rm origin
+ 1003  mkdir ws10
+ 1004  ls
+ 1005  cp numbers.py ws10
+ 1006  cp amazon_reviews_us_Books_v1_02.tsv ws10
+ 1007  cd ws10/
+ 1008  pwd
+ 1009  ls
+ 1010  time python3 numbers.py
+ 1011  vi Numbers.sh
+ 1012  awk -F "\t" '{print $9}' amazon_reviews_us_Books_v1_02.tsv > col_9.txt
+ 1013  vi col_9.txt
+ 1014  vi numbers.sh
+ 1015  vi Numbers.sh
+ 1016  chmod u+x numbers.sh
+ 1017  ./numbers.sh
+ 1018  chmod Numbers.sh
+ 1019  chmod u+x Numbers.sh
+ 1020  ./Numbers.sh
+ 1021  ls
+ 1022  rm numbers.sh
+ 1023  ls
+ 1024  vi Numbers.sh
+ 1025  ./Numbers.sh
+ 1026  time ./Numbers.sh
+ 1027  history > cmds.log
